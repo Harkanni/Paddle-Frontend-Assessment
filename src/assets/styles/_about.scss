@@ -1,0 +1,115 @@
+.about {
+  min-height: 100vh;
+
+  &_banner {
+    height: 80vh;
+    position: relative;
+
+    .about_us {
+      background: rgba(18, 17, 17, 0.63);
+      align-items: center;
+    }
+
+    .what-we-do {
+      align-items: end;
+    }
+
+    .about_desc {
+      position: absolute;
+      font-size: 2rem;
+      top: 30%;
+      left: 40%;
+
+      p {
+      }
+    }
+  }
+
+  &_metrik {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+
+    p {
+      width: 70%;
+    }
+  }
+
+  &_why-us {
+
+    .n_01 {
+      font-size: 10px;
+      border-bottom: 1px solid #fff;
+      width: 50px;
+      text-align: center;
+      margin-right: 1rem;
+      transform: translateY(-.5rem);
+    }
+  }
+
+  &_question {
+    background: rgba(18, 17, 17, 0.63);
+    min-height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .question {
+      width: 80%;
+    }
+  }
+
+  footer {
+    background: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about {
+    &_banner {
+      height: 50vh !important;
+
+      .about_us {
+        p {visibility: hidden;}
+      }
+
+      .about_desc {
+        position: absolute;
+        font-size: 2rem;
+        top: 30%;
+        left: 30%;
+
+        p {
+        }
+      }
+    }
+
+    &_why-us {
+
+    .q_01 {
+      width: 90%;
+      margin: auto;
+    }
+   }
+  } 
+}
+
+@media screen and (min-width: 809px) {
+  .about {
+    &_banner {
+      height: 50vh !important;
+
+      .about_us {
+        p {visibility: hidden;}
+      }
+    }
+
+    &_why-us {
+      .q_01 {
+        padding-left: 2rem
+      }
+    }
+  } 
+}

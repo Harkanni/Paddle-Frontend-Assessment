@@ -1,0 +1,344 @@
+@charset "UTF-8";
+header {
+  padding: 1rem 3rem;
+}
+header .home_nav li {
+  list-style: none;
+  margin-left: 1rem;
+}
+
+.home_comming {
+  width: 50%;
+  margin: auto;
+}
+.home_comming .timer {
+  margin: 1rem;
+}
+.home_comming .timer div:nth-child(n) {
+  background: #fff;
+  color: #000;
+  border-radius: 0.3rem;
+  width: 12%;
+  text-align: center;
+  padding: 1%;
+  margin-left: 1rem;
+}
+.home_comming .timer div h2:nth-of-type(n) {
+  margin-bottom: 0;
+}
+.home_comming input:focus {
+  outline: none;
+}
+.home_comming .form {
+  margin-bottom: 1rem;
+}
+.home_comming .form input {
+  background: none;
+  padding: 1px;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid grey;
+  margin-left: 1rem;
+}
+.home_comming .contact-form {
+  background: #fff;
+  border-radius: 1rem;
+  width: 80%;
+  margin: auto;
+}
+.home_comming .contact-form input, .home_comming .contact-form button {
+  background: none;
+  border: none;
+}
+.home_comming .contact-form input {
+  padding-left: 1rem !important;
+  padding: 0.3em;
+  width: 80%;
+}
+.home_comming .contact-form button {
+  background: blue;
+  width: 60%;
+  font-size: 0.7em;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.home_comming .contact-form button p {
+  margin-bottom: 0px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end !important;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  width: 85%;
+  height: 120px;
+  margin: 50px auto 0;
+  border-radius: 50% 50% 50% 50%/100% 100% 0% 0%;
+}
+footer .footer-content {
+  width: 40%;
+  text-align: center;
+}
+footer p {
+  font-weight: lighter;
+  font-size: 12px;
+}
+footer .socials {
+  justify-content: space-between !important;
+}
+
+@media screen and (min-width: 360px) {
+  header {
+    padding: 0 1rem;
+  }
+
+  .home_nav button {
+    cursor: pointer;
+  }
+
+  .home_comming {
+    width: 89% !important;
+  }
+  .home_comming .timer {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem !important;
+  }
+  .home_comming .timer div {
+    width: 40% !important;
+    padding: 0 5% !important;
+  }
+  .home_comming .form {
+    font-size: 0.7rem;
+  }
+  .home_comming .form input {
+    width: 45vw;
+  }
+  .home_comming .form input:nth-of-type(2) {
+    width: 40vw;
+  }
+  .home_comming .contact-form {
+    width: 90vw !important;
+    margin: 0 !important;
+  }
+
+  footer {
+    width: 100% !important;
+    height: 20vh !important;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 50px auto 0;
+    border-radius: 0;
+  }
+}
+@media screen and (min-width: 809px) {
+  header {
+    padding: 1rem;
+  }
+
+  .home_nav ul {
+    display: flex !important;
+  }
+
+  .home_comming {
+    width: 50% !important;
+  }
+  .home_comming .timer {
+    display: flex !important;
+  }
+  .home_comming .contact-form {
+    width: 50vw !important;
+    margin: 0 !important;
+  }
+
+  footer {
+    width: 85%;
+    height: 120px;
+    margin: 50px auto 0;
+    border-radius: 50% 50% 50% 50%/100% 100% 0% 0%;
+  }
+}
+.blog {
+  min-height: 100vh;
+  width: 97%;
+  margin: 0px auto 10px;
+}
+.blog_banner {
+  background: grey;
+  height: 50vh;
+  position: relative;
+}
+.blog_banner::after {
+  content: "————— Blog";
+  position: absolute;
+  top: 20%;
+  left: 25%;
+}
+.blog_banner::before {
+  content: "";
+  position: absolute;
+  background: #2d2d2d;
+  height: 100%;
+  width: 40%;
+}
+.blog_banner .desc {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+.blog_info .searchbox {
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.blog_info .searchbox input, .blog_info .searchbox input:focus {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+.blog_readmore {
+  width: 150px;
+  margin: auto;
+  background: #7c10d5;
+  text-align: center;
+  border-radius: 1.5rem;
+}
+.blog_readmore button {
+  background: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+}
+
+.repo {
+  width: 90%;
+  margin: auto;
+}
+
+.about {
+  min-height: 100vh;
+}
+.about_banner {
+  height: 80vh;
+  position: relative;
+}
+.about_banner .about_us {
+  background: rgba(18, 17, 17, 0.63);
+  align-items: center;
+}
+.about_banner .what-we-do {
+  align-items: end;
+}
+.about_banner .about_desc {
+  position: absolute;
+  font-size: 2rem;
+  top: 30%;
+  left: 40%;
+}
+.about_metrik {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.about_metrik p {
+  width: 70%;
+}
+.about_why-us .n_01 {
+  font-size: 10px;
+  border-bottom: 1px solid #fff;
+  width: 50px;
+  text-align: center;
+  margin-right: 1rem;
+  transform: translateY(-0.5rem);
+}
+.about_question {
+  background: rgba(18, 17, 17, 0.63);
+  min-height: 13rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_question .question {
+  width: 80%;
+}
+.about footer {
+  background: none;
+}
+
+@media screen and (max-width: 576px) {
+  .about_banner {
+    height: 50vh !important;
+  }
+  .about_banner .about_us p {
+    visibility: hidden;
+  }
+  .about_banner .about_desc {
+    position: absolute;
+    font-size: 2rem;
+    top: 30%;
+    left: 30%;
+  }
+  .about_why-us .q_01 {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 809px) {
+  .about_banner {
+    height: 50vh !important;
+  }
+  .about_banner .about_us p {
+    visibility: hidden;
+  }
+  .about_why-us .q_01 {
+    padding-left: 2rem;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: #202020;
+  color: #fff;
+  font-family: "Josefin Sans";
+  height: 100% !important;
+}
+body .router-links {
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+body .router-links h2 {
+  font-size: 15px;
+}
+body .router-links .contact-link {
+  background: #fff;
+  color: #000;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+body .router-link-active {
+  color: #91009d;
+}
+body .router-link-active .contact {
+  background: #271ac1 !important;
+  color: #fff;
+}
+body nav {
+  align-items: center;
+}
+body nav > .router-links {
+  padding: 0;
+  margin: 0;
+  height: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

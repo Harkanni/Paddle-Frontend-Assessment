@@ -1,0 +1,50 @@
+@import "_home.scss";
+@import "_responsive.scss";
+@import "_blog.scss";
+@import "_github.scss";
+@import "_about.scss";
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	background: #202020;
+	color: #fff;
+	font-family: "Josefin Sans";
+	height: 100% !important;
+
+	.router-links {
+		cursor: pointer;
+		color: #fff;
+		text-decoration: none;
+
+		h2 {
+			font-size: 15px
+		}
+
+		.contact-link {
+			background: #fff;
+			color: #000;
+			border-radius: 1rem;
+			padding: .5rem 1rem
+		}
+	}
+	.router-link-active {
+		color: #91009d
+	}
+	.router-link-active .contact {
+		background: #271ac1 !important;
+		color: #fff;
+	}
+	nav {
+		align-items: center;
+
+		>.router-links {
+			padding: 0;
+			margin: 0;
+			height: 20px
+		} 
+	}
+}
