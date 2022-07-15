@@ -29,6 +29,9 @@
   ``` bash
   # install npm
   npm install npm@latest -g
+  
+  # check if installed
+  npm -v
   ```
   
 ####  Installation
