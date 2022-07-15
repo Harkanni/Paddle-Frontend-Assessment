@@ -3,7 +3,7 @@
 > This application is created as part of the frontend coding challenge by ELC Ltd. I Reproduced the coming soon design prototype in VueX, SCSS and Bootstrap and also implement a github repo searcher where you can fetch the most starred Github repos that were created in the last 30 days with Github's REST API
 
 <p align="center">
-  <img src="./Screenshot2.png"/>
+  <img src="./Project Screenshots/Screenshot2.png"/>
   <br>
 </p>
 
